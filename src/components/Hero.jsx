@@ -6,10 +6,10 @@ export default function Hero(){
       <div className="hero-left">
         <h2>Cybersecurity Engineer & Developer</h2>
         <p>Professional Cybersecurity Portfolio — B.Tech CSE (Cyber Security). I build tools and systems for network monitoring, threat detection, and secure data handling.</p>
-        <a className="btn" href="/public/Resume.pdf" target="_blank">Download Resume</a>
+        <a className="btn" href="/Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
       </div>
       <div className="hero-right">
-        <img src="/public/profile.jpg" alt="Profile" className="avatar" />
+        <img src="/profile.jpg" alt="Profile" className="avatar" />
       </div>
     </section>
   )

@@ -1,17 +1,17 @@
 # Prachi Khutarkar — Cybersecurity Portfolio
 
-This repository contains a Vite + React single-page portfolio starter tailored for a professional cybersecurity theme (dark navy/blue). I committed the app structure, project entries (as you provided), and a placeholder contact form that uses Formspree.
+This repository contains a Vite + React single-page portfolio starter tailored for a professional cybersecurity theme (dark navy/blue). I committed the app structure, project entries (as you provided), and a Formspree placeholder.
 
 What I committed
 - Vite + React app (index.html, src/, vite.config.js)
-- Projects data (src/data/projects.js) — includes the two real projects you gave
+- Projects data (src/data/projects.js) — includes the two projects you gave
 - Placeholder contact form wired to a Formspree placeholder
 - Styles using a professional dark navy/blue theme
 - README (this file)
 
-Assets you should add
-- public/Resume.pdf  — place your resume PDF here (I did NOT add the binary to avoid large commit). Name: `Resume.pdf`
-- public/profile.jpg — place your profile image here named `profile.jpg`
+Important: where to put your assets
+- Place your resume at the repository root as `Resume.pdf` (served by Vite at `/Resume.pdf`).
+- Place your profile image at the repository root as `profile.jpg` (served by Vite at `/profile.jpg`).
 
 How to run locally
 1. Clone the repo
@@ -27,23 +27,17 @@ Activating the contact form (Formspree)
 - Replace the placeholder action in `src/components/Contact.jsx` or set `src/config/formspree.js` and update the form to import it.
 
 Where to edit content
-- src/data/projects.js — project titles, tech, bullets, and URLs
-- src/components/Hero.jsx — hero text and link target for resume
+- src/data/projects.js — project list (titles, tech, bullets, URLs)
+- src/components/Hero.jsx — hero text and resume link
+- src/components/About.jsx — about paragraph
 - src/styles.css — theme colors and layout tweaks
+- src/components/Contact.jsx — form configuration (Formspree action)
 
 Deployment
-- This site can be deployed on GitHub Pages, Vercel, Netlify, or similar. For GitHub Pages, build the site and push the `dist/` contents to the gh-pages branch or use an action.
+- This site can be deployed on Vercel (recommended), Netlify, or GitHub Pages. For Vercel, connect the GitHub repo and Vercel will detect the Vite app and provide a default deployment.
 
-Notes
-- I kept the projects you provided exactly as you wrote them — no placeholders.
-- I used placeholders for the resume/profile files so you can upload the exact binary assets to `public/Resume.pdf` and `public/profile.jpg`.
-
-If you want, I can now:
-- Add a small GitHub Actions workflow to deploy to GitHub Pages automatically on push
-- Wire the contact form to your Formspree endpoint if you paste it here
-- Replace the placeholders with the exact Resume.pdf and profile.jpg if you paste their binary (or allow me to pull them from a link)
-
-Next steps I will take if you confirm:
-- (Optional) Add GitHub Pages deployment workflow
-- Help you paste the Formspree endpoint into the code
+Next steps I can take for you
+- Commit your Resume.pdf and profile.jpg into the repository root if you upload them here (I will add them to `main`).
+- Wire the Formspree endpoint when you provide it.
+- Add a GitHub Actions workflow or Vercel-specific config if desired.
 
